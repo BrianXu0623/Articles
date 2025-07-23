@@ -1,11 +1,3 @@
----
-layout: post
-title:  "High-Performance Distributed Media Processing Dataflow: Zero-Copy And Kernel Bypass"
-date:   2025-07-16 15:10:11 +1000
-tags: [OS, Distributed System, Media Processing, Serialization, RPC, RDMA, ProtoBuf, Capnproto, CXL, Data Flow, Service Communication & Performance]
-author: "Brian Xu" 
----
-
 # **High Performance Media Processing Distributed Data Flow: Serialization and RPC**
 
 # **Abstract**
