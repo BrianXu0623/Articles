@@ -249,7 +249,7 @@ Proto Buffers encoding round trip time by go benchmark (using same message) is *
 
 **Note**
 
-To simulate 8 QPS, `time.Sleep()`was used between runs. Experiments show that this is the main reason for the performance difference between the two metric results. The exact cause remains to be further investigated, but the initial hypothesis is about context switches and CPU cache invalidation.
+To simulate 8 QPS, `time.Sleep()`was used between runs. Experiments show that this is the main reason for the performance difference between the two metric results. The exact cause remains to be further investigated, but the initial hypothesis is about CPU frequency ramp‑up and CPU cache invalidation.
 
 # **Cap'n'proto**
 
