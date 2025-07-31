@@ -513,7 +513,7 @@ Since video frame content is typically fixed upon generation, and the data flows
 
 ## **Cost of RPC**
 
-Even though Cap’n Proto is designed for high performance, its RPC still incurs fundamental system-level costs. Capnp's native RPC protocal or GRPC use traditional network data path, it needs to go through the buffers using the sockets API in the user space. In the kernel, the data path includes the TCP, IPv4/6 stack all the way down to the device driver and eventually the network fabric. All these steps require CPU cycles for processing. With high bandwidth networks today (25,40,50, and 100GbE) this can pose a challenge because of the amount of CPU time required to process data and put that data on the wire.
+Even though Cap’n Proto is designed for high performance, its RPC process still incurs fundamental system-level costs. Capnp's native RPC protocal or GRPC use traditional network data path, it needs to copy the buffers using the sockets API from user space to kernal space. In the kernel, the data path includes the TCP, IPv4/6 stack all the way down to the device driver and eventually the network fabric. All these steps require CPU cycles for processing. With high bandwidth networks today (25,40,50, and 100GbE), the amount of CPU time required to process data and put that data on the wire can still become a bottleneck.
 
 # **Cap'n'proto X RDMA**
 
